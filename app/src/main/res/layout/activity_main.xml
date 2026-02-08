@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEURAL HACK"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:letterSpacing="0.2" />
+
+    <Button
+        android:id="@+id/btn_3gt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 GOOD THINGS"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_cbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COGNITIVE THERAPY"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHADOW WORK"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW TIMELINE"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

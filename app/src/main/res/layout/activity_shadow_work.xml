@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHADOW WORK"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="影（モヤモヤ）を光に変えるデバッグ"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="8dp">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. 今、何にモヤッとした？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_1" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="出来事を客観的に" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. それはなぜ？（感情の裏側）" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="なぜそう感じた？" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. なぜそう思う？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_3" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="掘り下げてみる" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. さらにそれはなぜ？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_4" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="さらに深く" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5. それが意味することは？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_5" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="核心に近づく" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="6. 根本にある「思い込み（Belief）」は？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_6" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="例：私は完璧でなければならない" android:layout_marginBottom="24dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="7. どう行動する？" android:textStyle="bold" android:textColor="#212121"/>
+            <EditText android:id="@+id/edit_shadow_7" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="新しい捉え方の定義" android:layout_marginBottom="40dp" android:inputType="textLongMessage"
+                android:textColor="#212121" android:textColorHint="#757575" android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/btn_save_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:text="記憶をアップデートする"
+                android:backgroundTint="#212121"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
