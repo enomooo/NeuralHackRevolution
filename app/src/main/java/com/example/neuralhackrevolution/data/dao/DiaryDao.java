@@ -53,4 +53,8 @@ public interface DiaryDao {
 
     @Query("SELECT * FROM diaries WHERE id = :id")
     Diary getDiaryById(int id);
+
+    @Query("SELECT * FROM shadow_works WHERE diaryId = :diaryId")
+    ShadowWork getShadowWorkByDiaryId(int diaryId);
+
 }

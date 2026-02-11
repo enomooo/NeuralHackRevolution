@@ -78,18 +78,19 @@ public class DiaryDetailActivity extends AppCompatActivity {
         findViewById(R.id.line_4).setVisibility(View.VISIBLE);
         findViewById(R.id.line_5).setVisibility(View.VISIBLE);
 
-        // 警告を避けるため、一旦変数に入れてからセットします
-        String q1 = "Q1. モヤッとした事: " + s.why01;
-        String q2 = "Q2. なぜ?: " + s.why02;
-        String q3 = "Q3. さらに?: " + s.why03;
-        String bel = "Belief: " + s.belief;
-        String tra = "Next Step: " + s.transformation;
+        // 最新の項目名（badEvent, why01...）に合わせて取得
+        String d1 = "出来事: " + s.badEvent;
+        String d2 = "なぜ1: " + s.why01;
+        String d3 = "なぜ2: " + s.why02;
+        String d4 = "なぜ3: " + s.why03;
+        String d5 = "なぜ4: " + s.why04;
+        // 必要に応じて s.rootCause や s.action も追加可能
 
-        ((TextView) findViewById(R.id.line_1)).setText(q1);
-        ((TextView) findViewById(R.id.line_2)).setText(q2);
-        ((TextView) findViewById(R.id.line_3)).setText(q3);
-        ((TextView) findViewById(R.id.line_4)).setText(bel);
-        ((TextView) findViewById(R.id.line_5)).setText(tra);
+        ((TextView) findViewById(R.id.line_1)).setText(d1);
+        ((TextView) findViewById(R.id.line_2)).setText(d2);
+        ((TextView) findViewById(R.id.line_3)).setText(d3);
+        ((TextView) findViewById(R.id.line_4)).setText(d4);
+        ((TextView) findViewById(R.id.line_5)).setText(d5);
     }
 
     public static class DiaryDetailActivity extends AppCompatActivity {
