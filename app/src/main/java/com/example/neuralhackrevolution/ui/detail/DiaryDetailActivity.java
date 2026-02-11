@@ -57,7 +57,7 @@ public class DiaryDetailActivity extends AppCompatActivity {
                     break;
 
                 case "CBT":
-                    // 今後ここに追加していくのが楽になる！
+                    // todo: 今後ここに追加していくのが楽になる！
                     break;
 
                 default:

@@ -54,6 +54,7 @@ public class ShadowWorkActivity extends AppCompatActivity{
 
                 runOnUiThread(() -> {
                     Toast.makeText(getApplicationContext(),"影が光に変わりました",Toast.LENGTH_SHORT).show();
+                    finish();
                 });
             });
         });

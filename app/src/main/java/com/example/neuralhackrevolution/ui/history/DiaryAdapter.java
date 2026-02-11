@@ -45,9 +45,11 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.DiaryViewHol
         holder.textType.setText(diary.formatType);
 
         holder.itemView.setOnClickListener(v -> {
+            // 遷移先をDiaryDetailActivityに固定
             Intent intent = new Intent(v.getContext(), DiaryDetailActivity.class);
-            // putExtraが荷物作り、startActivityでAndroidシステムに渡す、受け取り先のgetIntent()でidを取得する。
+            // putExtraがどの日記を開くかの荷物作り
             intent.putExtra("DIARY_ID", diary.id);
+
             v.getContext().startActivity(intent);
         });
     }

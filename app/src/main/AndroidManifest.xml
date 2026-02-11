@@ -11,24 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NeuralHackRevolution">
+
         <activity
-            android:name=".ui.detail.DiaryDetailActivity$DiaryDetailActivity"
+            android:name=".ui.detail.DiaryDetailActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.history.HistoryActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.form.ThreeGoodThingsActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.form.ShadowWorkActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

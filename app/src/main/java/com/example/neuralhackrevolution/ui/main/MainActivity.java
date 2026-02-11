@@ -23,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
         // buttonの紐づけ
         Button btn3gt = findViewById(R.id.btn_3gt);
+        Button btnShadow = findViewById(R.id.btn_shadow);
         Button btnHistory = findViewById(R.id.btn_history);
 
-        /**
-         * 3GTボタンが押された時の遷移処理
-         */
+        // 3GTボタンが押された時の遷移処理
         btn3gt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,9 +36,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /**
-         * 履歴一覧（タイムライン）のボタンが押された時の遷移処理
-         */
+        // SHADOW WORKボタンが押された時の遷移処理
+        btnShadow.setOnClickListener(v ->{
+            Intent intent = new Intent(MainActivity.this, com.example.neuralhackrevolution.ui.form.ShadowWorkActivity.class);
+            startActivity(intent);
+        });
+
+
+        // 履歴一覧（タイムライン）のボタンが押された時の遷移処理
         btnHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
             startActivity(intent);
