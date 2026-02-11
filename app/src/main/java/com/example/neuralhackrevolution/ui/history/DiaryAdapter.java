@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.neuralhackrevolution.R;
 import com.example.neuralhackrevolution.data.entity.Diary;
+import com.example.neuralhackrevolution.ui.detail.DiaryDetailActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -44,7 +45,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.DiaryViewHol
         holder.textType.setText(diary.formatType);
 
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), DiaryDetailActivity.DiaryDetailActivity.class);
+            Intent intent = new Intent(v.getContext(), DiaryDetailActivity.class);
             // putExtraが荷物作り、startActivityでAndroidシステムに渡す、受け取り先のgetIntent()でidを取得する。
             intent.putExtra("DIARY_ID", diary.id);
             v.getContext().startActivity(intent);
