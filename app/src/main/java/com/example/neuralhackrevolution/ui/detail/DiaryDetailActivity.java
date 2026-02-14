@@ -57,7 +57,11 @@ public class DiaryDetailActivity extends AppCompatActivity {
                     break;
 
                 case "CBT":
-                    // todo: 今後ここに追加していくのが楽になる！
+                    com.example.neuralhackrevolution.data.entity.CbtLog cbt = db.diaryDao().getCbtByDiaryId(diaryId);
+                    runOnUiThread(() ->{
+                        setupBasicInfo(dateString, "CBT (認知行動療法)");
+                        displayCBT(cbt);
+                    });
                     break;
 
                 default:
@@ -110,4 +114,30 @@ public class DiaryDetailActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.line_6)).setText(root);
         ((TextView) findViewById(R.id.line_7)).setText(act);
     }
+
+    private void displayCBT(com.example.neuralhackrevolution.data.entity.CbtLog c) {
+        if (c == null) return;
+
+        findViewById(R.id.line_1).setVisibility(View.VISIBLE);
+        findViewById(R.id.line_2).setVisibility(View.VISIBLE);
+        findViewById(R.id.line_3).setVisibility(View.VISIBLE);
+        findViewById(R.id.line_4).setVisibility(View.VISIBLE);
+        findViewById(R.id.line_5).setVisibility(View.VISIBLE);
+        findViewById(R.id.line_6).setVisibility(View.VISIBLE);
+
+        ((TextView) findViewById(R.id.line_1)).setText("実施前の気分: " + c.moodBefore + "%");
+        ((TextView) findViewById(R.id.line_2)).setText("自動思考: " + c.automaticThought);
+        ((TextView) findViewById(R.id.line_3)).setText("根拠: " + c.evidence);
+        ((TextView) findViewById(R.id.line_4)).setText("反証: " + c.counterEvidence);
+        ((TextView) findViewById(R.id.line_5)).setText("適応的思考: " + c.adaptiveThought);
+        ((TextView) findViewById(R.id.line_6)).setText("実施後の気分: " + c.moodAfter + "%");
+
+    }
 }
+
+
+
+
+
+
+

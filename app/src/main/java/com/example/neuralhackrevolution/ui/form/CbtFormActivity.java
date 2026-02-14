@@ -21,7 +21,7 @@ public class CbtFormActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cbt_form);
 
         AppDatabase db = AppDatabase.getDatabase(this);
-        Button btnSave = findViewById(R.id.btn_save_cbt);
+        Button btnSave = findViewById(R.id.btn_cbt);
 
         btnSave.setOnClickListener(v -> {
             // 入力値の取得
@@ -47,14 +47,13 @@ public class CbtFormActivity extends AppCompatActivity {
                 // 2. 詳細（CbtLog）の保存
                 CbtLog cbt = new CbtLog();
                 cbt.diaryId = diaryId;
-                cbt.situation = sit;
-                cbt.emotionType = emoType;
-                cbt.emotionIntensity = emoInt;
-                cbt.automaticThought = autoThought;
-                cbt.evidence = evi;
-                cbt.counterEvidence = counter;
-                cbt.alternativeThought = alt;
-                cbt.emotionIntensityAfter = emoAfter;
+
+                cbt.moodBefore = Integer.parseInt(emoIntStr); // 書く前の気分
+                cbt.automaticThought = autoThought;          // 自動思考
+                cbt.evidence = evi;                          // 根拠
+                cbt.counterEvidence = counter;                // 反証
+                cbt.adaptiveThought = alt;                    // 適応的思考
+                cbt.moodAfter = Integer.parseInt(emoAfter);  // 書いた後の気分
 
                 db.diaryDao().insertCbtLog(cbt);
 

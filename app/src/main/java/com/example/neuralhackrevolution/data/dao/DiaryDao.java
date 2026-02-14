@@ -51,6 +51,10 @@ public interface DiaryDao {
     @Query("SELECT * FROM shadow_works WHERE diaryId = :diaryId")
     ShadowWork getShadowWorkByDiaryId(long diaryId);
 
+    // 指定したdiaryIdに紐づくCbtLoの詳細を取得する
+    @Query("SELECT * FROM cbt_logs WHERE diaryId = :diaryId")
+    CbtLog getCbtByDiaryId(int diaryId);
+
     @Query("SELECT * FROM diaries WHERE id = :id")
     Diary getDiaryById(int id);
 

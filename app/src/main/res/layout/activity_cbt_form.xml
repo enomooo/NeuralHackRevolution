@@ -44,7 +44,7 @@
     <EditText android:id="@+id/edit_cbt_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：30" android:inputType="number" android:layout_marginBottom="20dp"/>
 
     <Button
-        android:id="@+id/btn_save_cbt"
+        android:id="@+id/btn_cbt"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="認知を再構成する"

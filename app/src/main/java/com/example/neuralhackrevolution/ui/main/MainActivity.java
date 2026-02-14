@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.neuralhackrevolution.R;
 import com.example.neuralhackrevolution.ui.history.HistoryActivity;
 import com.example.neuralhackrevolution.ui.form.ThreeGoodThingsActivity;
+import com.example.neuralhackrevolution.ui.form.ShadowWorkActivity;
+import com.example.neuralhackrevolution.ui.form.CbtFormActivity;
 
 /**
  * アプリの入口となるメイン画面です。
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         // buttonの紐づけ
         Button btn3gt = findViewById(R.id.btn_3gt);
         Button btnShadow = findViewById(R.id.btn_shadow);
+        Button btnCbt = findViewById(R.id.btn_cbt);
         Button btnHistory = findViewById(R.id.btn_history);
 
         // 3GTボタンが押された時の遷移処理
@@ -38,13 +41,20 @@ public class MainActivity extends AppCompatActivity {
 
         // SHADOW WORKボタンが押された時の遷移処理
         btnShadow.setOnClickListener(v ->{
-            Intent intent = new Intent(MainActivity.this, com.example.neuralhackrevolution.ui.form.ShadowWorkActivity.class);
+            Intent intent = new Intent(MainActivity.this, ShadowWorkActivity.class);
+            startActivity(intent);
+        });
+
+        // CBTLogボタンが押された時の遷移処理
+        btnCbt.setOnClickListener(v ->{
+            Intent intent = new Intent(MainActivity.this, CbtFormActivity.class);
             startActivity(intent);
         });
 
 
         // 履歴一覧（タイムライン）のボタンが押された時の遷移処理
         btnHistory.setOnClickListener(v -> {
+            android.util.Log.d("CHECK", "CBTボタンのクリックを検知しました！");
             Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
             startActivity(intent);
         });

@@ -26,15 +26,6 @@
         android:layout_marginBottom="12dp" />
 
     <Button
-        android:id="@+id/btn_cbt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="COGNITIVE THERAPY"
-        android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="12dp" />
-
-    <Button
         android:id="@+id/btn_shadow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
