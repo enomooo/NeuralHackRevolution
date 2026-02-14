@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CBT: 認知再構成法"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. 状況（いつ、どこで、誰と、何を？）" android:textStyle="bold"/>
+    <EditText android:id="@+id/edit_cbt_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：会議中に上司に指摘された" android:layout_marginBottom="15dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. 感情とその強さ(0-100%)" android:textStyle="bold"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <EditText android:id="@+id/edit_cbt_2_type" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:hint="例：不安、落ち込み"/>
+        <EditText android:id="@+id/edit_cbt_2_intensity" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="80" android:inputType="number"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. 自動思考（頭に浮かんだ言葉）" android:textStyle="bold" android:layout_marginTop="10dp"/>
+    <EditText android:id="@+id/edit_cbt_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：自分はもうダメだ、クビになる" android:layout_marginBottom="15dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. 根拠（思考を裏付ける事実は？）" android:textStyle="bold"/>
+    <EditText android:id="@+id/edit_cbt_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：ミスをしたのは事実だ" android:layout_marginBottom="15dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. 反論（思考と矛盾する事実は？）" android:textStyle="bold"/>
+    <EditText android:id="@+id/edit_cbt_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：今まで何度も成功してきた" android:layout_marginBottom="15dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. 新しい考え方（バランスの良い思考）" android:textStyle="bold"/>
+    <EditText android:id="@+id/edit_cbt_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：このミスは成長の糧になる" android:layout_marginBottom="15dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7. 今の感情の強さは？(0-100%)" android:textStyle="bold"/>
+    <EditText android:id="@+id/edit_cbt_7" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="例：30" android:inputType="number" android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_save_cbt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="認知を再構成する"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
+</ScrollView>
