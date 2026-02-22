@@ -1,15 +1,15 @@
-package com.example.neuralhackrevolution.ui.detail;
+package com.example.kotoamadukami.ui.detail;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.neuralhackrevolution.R;
-import com.example.neuralhackrevolution.data.AppDatabase;
-import com.example.neuralhackrevolution.data.entity.Diary;
-import com.example.neuralhackrevolution.data.entity.ShadowWork;
-import com.example.neuralhackrevolution.data.entity.ThreeGoodThings;
+import com.example.kotoamadukami.R;
+import com.example.kotoamadukami.data.AppDatabase;
+import com.example.kotoamadukami.data.entity.Diary;
+import com.example.kotoamadukami.data.entity.ShadowWork;
+import com.example.kotoamadukami.data.entity.ThreeGoodThings;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -57,7 +57,7 @@ public class DiaryDetailActivity extends AppCompatActivity {
                     break;
 
                 case "CBT":
-                    com.example.neuralhackrevolution.data.entity.CbtLog cbt = db.diaryDao().getCbtByDiaryId(diaryId);
+                    com.example.kotoamadukami.data.entity.CbtLog cbt = db.diaryDao().getCbtByDiaryId(diaryId);
                     runOnUiThread(() ->{
                         setupBasicInfo(dateString, "CBT (認知行動療法)");
                         displayCBT(cbt);
@@ -115,7 +115,7 @@ public class DiaryDetailActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.line_7)).setText(act);
     }
 
-    private void displayCBT(com.example.neuralhackrevolution.data.entity.CbtLog c) {
+    private void displayCBT(com.example.kotoamadukami.data.entity.CbtLog c) {
         if (c == null) return;
 
         findViewById(R.id.line_1).setVisibility(View.VISIBLE);

@@ -1,14 +1,14 @@
-package com.example.neuralhackrevolution.ui.form;
+package com.example.kotoamadukami.ui.form;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.neuralhackrevolution.R;
-import com.example.neuralhackrevolution.data.AppDatabase;
-import com.example.neuralhackrevolution.data.entity.Diary;
-import com.example.neuralhackrevolution.data.entity.ShadowWork;
+import com.example.kotoamadukami.R;
+import com.example.kotoamadukami.data.AppDatabase;
+import com.example.kotoamadukami.data.entity.Diary;
+import com.example.kotoamadukami.data.entity.ShadowWork;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

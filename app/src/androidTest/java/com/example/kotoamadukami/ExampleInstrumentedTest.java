@@ -1,4 +1,4 @@
-package com.example.neuralhackrevolution;
+package com.example.kotoamadukami;
 
 import android.content.Context;
 

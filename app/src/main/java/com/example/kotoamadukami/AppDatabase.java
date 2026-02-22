@@ -1,11 +1,11 @@
-package com.example.neuralhackrevolution;
+package com.example.kotoamadukami;
 
 import android.content.Context;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import com.example.neuralhackrevolution.data.dao.DiaryDao;
-import com.example.neuralhackrevolution.data.entity.*;
+import com.example.kotoamadukami.data.dao.DiaryDao;
+import com.example.kotoamadukami.data.entity.*;
 
 /**
  * アプリケーションのメインデータベースクラス。

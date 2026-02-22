@@ -1,4 +1,4 @@
-package com.example.neuralhackrevolution;
+package com.example.kotoamadukami;
 
 import org.junit.Test;
 

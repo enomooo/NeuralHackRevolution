@@ -1,4 +1,4 @@
-package com.example.neuralhackrevolution.data.entity;
+package com.example.kotoamadukami.data.entity;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;

@@ -1,4 +1,4 @@
-package com.example.neuralhackrevolution.ui.history;
+package com.example.kotoamadukami.ui.history;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,9 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.neuralhackrevolution.R;
-import com.example.neuralhackrevolution.data.entity.Diary;
-import com.example.neuralhackrevolution.ui.detail.DiaryDetailActivity;
+import com.example.kotoamadukami.R;
+import com.example.kotoamadukami.data.entity.Diary;
+import com.example.kotoamadukami.ui.detail.DiaryDetailActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

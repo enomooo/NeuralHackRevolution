@@ -1,4 +1,4 @@
-package com.example.neuralhackrevolution.ui.history;
+package com.example.kotoamadukami.ui.history;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.neuralhackrevolution.R;
-import com.example.neuralhackrevolution.data.AppDatabase;
-import com.example.neuralhackrevolution.data.entity.Diary;
+import com.example.kotoamadukami.R;
+import com.example.kotoamadukami.data.AppDatabase;
+import com.example.kotoamadukami.data.entity.Diary;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
